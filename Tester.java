@@ -6,6 +6,7 @@ public class Tester {
         System.out.println();
         System.out.println("Now Testing Constructors");
         boolean passedConstructors = true;
+        System.out.println("Passed all Constructor testing");
 
         Piece a = new Pawn(Color.WHITE);
         Piece b = new Pawn(Color.BLACK);
@@ -144,7 +145,7 @@ public class Tester {
             passedGetMoveWithPiece = false;
         }
         if (passedGetMoveWithPiece) {
-            System.out.print("Passed all getMoveWithPiece() tests");
+            System.out.println("Passed all getMoveWithPiece() tests");
         } else {
             System.out.print("Failed one or more getMoveWithPiece() tests");
         }
@@ -175,7 +176,7 @@ public class Tester {
         }
 
         int score = 0;
-        score = passedConstructors ? (score = score + 13) : (score = score);
+        score = passedConstructors ? (score = score + 21) : (score = score);
         score = passedPly ? (score = score + 5) : (score = score);
         score = passedMove ? (score = score + 4) : (score = score);
         score = passedGetMove ? (score = score + 10) : (score = score);
@@ -184,7 +185,7 @@ public class Tester {
         score = passedGetMoveWithPiece ? (score = score + 15) : (score = score);
         score = passedFilter ? (score = score + 15) : (score = score);
 
-        System.out.printf("You scored a %d/92. Nice work", score);
+        System.out.printf("\nYou scored a %d/100. Nice work\n", score);
 
 
 
