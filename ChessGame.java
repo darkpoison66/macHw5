@@ -106,8 +106,10 @@ public class ChessGame {
     public class Coolio implements Predicate<Move> {
         @Override
         public boolean test(Move move) {
-            return (move.getWhitePly().getPiece().equals(filterPiece)
-                   || move.getBlackPly().getPiece().equals(filterPiece));
+            return (move.getWhitePly().getPiece().algebraicName().
+                    equals(filterPiece.algebraicName())
+                   || move.getBlackPly().getPiece().algebraicName().
+                    equals(filterPiece.algebraicName()));
         }
     }
 

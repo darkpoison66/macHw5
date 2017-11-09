@@ -17,7 +17,7 @@ public class Ply {
      * @param piece the chess piece
      * @param from the Square from which the piece originated
      * @param to the Square to which the piece is going to move
-     * @param comment String comment for the player's move
+     * @param comment Optional String comment for the player's move
      */
     public Ply(Piece piece, Square from, Square to, Optional<String> comment) {
         this.piece = piece;
